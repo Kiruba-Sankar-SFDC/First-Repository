@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Related Contacts">
+        <template if:true={relatedContacts}>
+            <template for:each={relatedContacts} for:item="contact">
+                <div key={contact.Id}>
+                    <div class="contact-container">
+                        <div class="name">
+                            {contact.Full_Name__c}
+                        </div>
+                        <button name={contact.Id} onclick={deleteContactHandler}> Delete </button>
+                    </div>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>

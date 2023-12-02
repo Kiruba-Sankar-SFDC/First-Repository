@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <lightning-combobox name="Rating" label="Rating" value={value} placeholder="Select Rating" options={options}
+            onchange={handleChange}></lightning-combobox>
+        <template if:true={isAccount}>
+            <p>Accounts Available</p>
+            <br>
+            <template for:each={accounts} for:item="account">
+                <div key={account.Id}>
+                    <p>{account.Name}</p>
+                    <p>-------------------------------</p>
+                </div>
+            </template>
+        </template>
+        <template if:false={isAccount}>
+            <p>No accounts found for the selected rating.</p>
+        </template>
+    </lightning-card>
+</template>

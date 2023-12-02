@@ -1,0 +1,7 @@
+<template>
+    <template if:true={showDataTable}>
+        <c-datatable onaccountselected={handleAccountSelected}></c-datatable> </template> <template
+        if:true={showRecordForm}>
+        <c-record-view account-id={selectedAccountId}></c-record-view>
+    </template>
+</template>

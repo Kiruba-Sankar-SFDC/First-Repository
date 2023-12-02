@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Scanned Products">
+        <ul>
+            <template for:each={scannedItems} for:item="item">
+                <li key={item.barcode}>
+                    Barcode: {item.barcode}, Count: {item.count}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

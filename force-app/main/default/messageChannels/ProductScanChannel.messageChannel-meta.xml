@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>ProductScanChannel</masterLabel>
+    <isExposed>true</isExposed>
+    <description>This channel sends scanned product information.</description>
+    <lightningMessageFields>
+        <fieldName>barcode</fieldName>
+        <description>The barcode of the scanned product.</description>
+    </lightningMessageFields>
+</LightningMessageChannel>

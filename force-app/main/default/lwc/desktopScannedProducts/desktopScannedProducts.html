@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Component">
+        <template if:true={scannedItems}>
+            <template for:each={scannedItems} for:item="barcode">
+                <div key={barcode}>
+                    <p>{barcode}</p>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>
