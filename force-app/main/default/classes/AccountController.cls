@@ -4,6 +4,7 @@ public class AccountController
     public static List<Account> getAccount(String Rating)
     {
         return [Select Id, Name, Industry, Rating From Account Where Rating=:Rating];
+        //Hi there
     }    
 
     @AuraEnabled(cacheable=true)
